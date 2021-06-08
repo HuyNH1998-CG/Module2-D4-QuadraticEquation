@@ -12,16 +12,14 @@ public class QuadraEquation {
         this.c = c;
     }
     public double getA(){
-        this.a = input.nextDouble();
         return this.a;
     }public double getB(){
-        this.b = input.nextDouble();
         return this.b;
     }public double getC(){
-        this.c = input.nextDouble();
         return this.c;
     }
     public void getDiscriminant() {
+
         delta = (this.b * this.b) - 4 * this.a * this.c;
         if (delta > 0) {
             System.out.println("Equation have 2 root " + ((-this.b + Math.sqrt(delta)) / (2 * this.a)) + " and " + ((-this.b - Math.sqrt(delta)) / (2 * this.a)));
